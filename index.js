@@ -42,7 +42,9 @@ module.exports = {
               // console.log('`ember serve` has quit');
               resolve();
             }).on('restart', function (files) {
-              console.log('Detected changes to: ' + files.map(function(f) { return path.basename(f); }).join(", "))
+              if (files) {
+                console.log('Detected changes to: ' + files.map(function(f) { return path.basename(f); }).join(", "))
+              }	
               console.log('Restarting `ember serve`');
             });
           });

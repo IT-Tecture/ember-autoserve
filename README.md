@@ -8,4 +8,4 @@ To install, run:
 
 Then, instead of running `ember serve`, run `ember autoserve` instead.
 
-Your development server will be automatically restarted when `ember-cli-build.js`, `.jshintrc`, or when you install a new addon!
+Your development server will be automatically restarted when `ember-cli-build.js` or `.jshintrc` change, when you install a new addon, or when you [enter `rs`](https://github.com/remy/nodemon#manual-restarting)!
