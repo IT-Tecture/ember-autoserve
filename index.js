@@ -2,7 +2,7 @@
 'use strict';
 
 var nodemon = require('nodemon');
-var Promise = require('ember-cli/lib/ext/promise');
+var { Promise } = require('rsvp');
 var path = require('path');
 var which = require('which');
 
